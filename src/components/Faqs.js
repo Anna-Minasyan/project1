@@ -10,6 +10,8 @@ const Faqs = () => {
                     <div className="col-lg-10">
                         <div className="accordion" id="accordionExample">
 
+
+
                {/*             <div className="accordion-item wow fadeInUp" data-wow-delay="0.1s">
                                 <h2 className="accordion-header" id="headingOne">
                                     <button className="accordion-button" type="button" data-bs-toggle="collapse"

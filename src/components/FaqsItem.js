@@ -13,8 +13,10 @@ const FaqsItem = (props) => {
                  dataBsParent="#accordionExample">
                 <div className="accordion-body">
                     {props.answer}
+
                 </div>
             </div>
+
         </div>
     )
 }
