@@ -1,4 +1,4 @@
-import icon7 from "./img/icon-7.png";
+
 
 const Card = (props) => {
     return (

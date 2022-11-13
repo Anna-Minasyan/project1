@@ -2,7 +2,7 @@
 
 const Feature = (props) => {
     return(
-        <div className="col-lg-4 col-md-6 wow fadeInUp" dataWowDelay="0.1s">
+        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div className="d-flex align-items-start">
                 <img className="img-fluid flex-shrink-0" src={props.src} alt="" />
                 <div className="ps-4">

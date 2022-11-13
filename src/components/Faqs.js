@@ -1,8 +1,22 @@
+import FaqsItem from "./FaqsItem";
+
 const Faqs = () => {
+
+    const faqs = [
+        {answer: "How to build a website?", question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "How long will it take to get a new website?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "Do you only create HTML websites?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "Will my website be mobile-friendly?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "Will you maintain my site for me?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "I’m on a strict budget. Do you have any low cost options?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "Will you maintain my site for me?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."},
+        {answer: "I’m on a strict budget. Do you have any low cost options?" , question: "Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam."}
+    ]
+
     return (
         <div className="container-xxl py-5">
             <div className="container">
-                <div className="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div className="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth: 500 + 'px'}}>
                     <h1 className="display-6">FAQs</h1>
                     <p className="text-primary fs-5 mb-5">Frequently Asked Questions</p>
                 </div>
@@ -10,7 +24,9 @@ const Faqs = () => {
                     <div className="col-lg-10">
                         <div className="accordion" id="accordionExample">
 
-
+                            {faqs.map((faq)=> (
+                                <FaqsItem answer={faq.answer} question={faq.question}/>
+                            ))}
 
                {/*             <div className="accordion-item wow fadeInUp" data-wow-delay="0.1s">
                                 <h2 className="accordion-header" id="headingOne">
